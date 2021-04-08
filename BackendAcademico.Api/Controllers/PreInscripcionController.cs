@@ -36,9 +36,13 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerPeriodosAcademicos 
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> +api/Academico/Preinscripcion/ObtenerPeriodosAcademicos 
         /// </para>
         /// </summary>
+        /// <returns>
+        /// <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"/>     
+        /// </returns>
+        /// 
         [HttpGet]
         [Route("ObtenerPeriodosAcademicos")]
         public async Task<IActionResult> GetPeriodosAcademicos()
@@ -70,7 +74,7 @@
         /// Retorna: 
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerCarreras 
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerCarreras 
         /// </para>
         /// </summary>
         ///
@@ -106,7 +110,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerNacionalidades
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerNacionalidades
         /// </para>
         /// 
         /// </summary>
@@ -141,7 +145,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerSexos
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerSexos
         /// </para>
         /// 
         /// </summary>
@@ -176,7 +180,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
         /// 
         /// </summary>
@@ -211,7 +215,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerTiposDocumento
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTiposDocumento
         /// </para>
         /// 
         /// </summary>
@@ -246,7 +250,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerTurnosColegio
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTurnosColegio
         /// </para>
         /// 
         /// </summary>
@@ -281,7 +285,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerTiposColegio
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTiposColegio
         /// </para>
         /// 
         /// </summary>
@@ -316,7 +320,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerValoresViveCon
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerValoresViveCon
         /// </para>
         /// 
         /// </summary>
@@ -349,14 +353,11 @@
         /// Tipo: GET
         /// </para>
         /// <para>
-
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerTiposSangre")]
         public async Task<IActionResult> GetTiposSangre()
@@ -379,7 +380,7 @@
                 return StatusCode(500, response);
             }
         }
- 
+
         /// <summary>
         /// Consideraciones: Devuele los departamentos según el ID del país seleccionado. 
         /// <para>
@@ -388,7 +389,7 @@
         /// <para>
         /// Parámetros: idPais (string)
         /// </para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// <para>
         /// </para>
         /// 
@@ -417,18 +418,14 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de los departamentos de Bolivia.
+        /// Consideraciones: Devuelve la lista de los departamentos de Bolivia.
         /// <para>
         /// Tipo: GET
         /// </para>
-        /// 
-
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerDepartamentosBolivia")]
         public async Task<IActionResult> GetDepartamentosBolivia()
@@ -460,7 +457,7 @@
         /// Parámetros: idDepartamento (String)
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
         /// 
         /// </summary>
@@ -496,7 +493,7 @@
         /// Parámetros: idProvincia(String)
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
         /// 
         /// </summary>
@@ -532,7 +529,7 @@
         /// Parámetros: idMunicipio(String)
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles 
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles 
         /// </para>
         /// 
         /// </summary>
@@ -568,7 +565,7 @@
         /// Parámetros: idProvincia (String)
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
         /// 
         /// </summary>
@@ -603,7 +600,7 @@
         /// <para>
         /// </para>
         /// <para>
-        /// api/Academico/Preinscripcion/ObtenerEstadosCiviles
+        /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
         /// 
         /// </summary>

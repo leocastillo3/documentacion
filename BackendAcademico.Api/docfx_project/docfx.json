@@ -30,6 +30,7 @@
 			{
 				"exclude": [
 					"index.md",
+					"api/toc.yml"
 				]
 			},
 			{
