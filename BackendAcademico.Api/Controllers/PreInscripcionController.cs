@@ -34,14 +34,11 @@
         /// Tipo: GET
         /// </para>
         /// <para>
-        /// 
         /// </para>
         /// <para>
         /// api/Academico/Preinscripcion/ObtenerPeriodosAcademicos 
         /// </para>
-        /// 
         /// </summary>
-        /// 
         [HttpGet]
         [Route("ObtenerPeriodosAcademicos")]
         public async Task<IActionResult> GetPeriodosAcademicos()
