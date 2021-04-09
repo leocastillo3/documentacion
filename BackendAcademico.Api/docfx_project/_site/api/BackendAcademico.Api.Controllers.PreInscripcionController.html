@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PreInscripcionController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PreInscripcionController
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController">
+  
+  
+  <h1 id="BackendAcademico_Api_Controllers_PreInscripcionController" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController" class="text-break">Class PreInscripcionController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_AddPreInscripcion_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.AddPreInscripcion*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_AddPreInscripcion_PreInscripcionQueryFilter_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.AddPreInscripcion(PreInscripcionQueryFilter)">AddPreInscripcion(PreInscripcionQueryFilter)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Guarda una nueva Pre-Inscripción.</p>
+<p>
+<remarks>PROCESO:</remarks> pre-inscripción.
+</p>
+<returns>
+<img src="https://cdn.marketing123.123formbuilder.com/wp-content/uploads/2020/12/Formulario-de-Inscripcion-1095873.jpg" alt="Mountain">     
+</returns>
+<p>
+TIPO: POST
+</p>
+<p>
+Formato del PayLoad de Pre-Inscripción:
+</p>
+<pre><code class="lang-cs">{
+ &quot;informacionGeneral&quot;: {
+  &quot;idCarrera&quot;: &quot;B65EJjJsnGXhytmZHqfQ==&quot;,
+  &quot;idPeriodoAcademico&quot;: &quot;gh8GelCVbXqMH9ij444w==&quot;,
+  &quot;fechaInscripcion&quot;: &quot;2019-08-28&quot;,
+  &quot;observacion&quot;: &quot;Sin observaciones&quot;
+},
+  &quot;datosPersonales&quot;: {
+  &quot;documentoIdentidad&quot;: &quot;8895578&quot;,
+  &quot;valorTipoDocumento&quot;: &quot;ooo4W8KdnMovKywZ6qzQ==&quot;,
+  &quot;idDepartamentoExpedido&quot;: &quot;ooo408KdnMovKywZ6qzQ==&quot;,
+  &quot;primerApellido&quot;: &quot;Rojas&quot;,
+  &quot;segundoApellido&quot;: &quot;Garcia&quot;,
+  &quot;tercerApellido&quot;: &quot;Guzman&quot;,
+  &quot;nombres&quot;: &quot;Carla&quot;,
+  &quot;fechaNacimiento&quot;: &quot;07/01/1999&quot;,
+  &quot;idPaisNacionalidad&quot;: &quot;ooo40MW8KdovKywZ6qzQ==&quot;,
+  &quot;idDepartamentoNacimiento&quot;: &quot;oooMW8KdnMovKywZ6qzQ==&quot;,
+  &quot;valorSexo&quot;: &quot;4mo9gjV/hDzYrnu/IHA==&quot;,
+  &quot;valorEstadoCivil&quot;: &quot;ooo40MKdnMovKywZ6qzQ==&quot;,
+  &quot;valorTipoSangre&quot;:  &quot;ooo40MKdnMovKywZ6qzQ==&quot;,
+  &quot;direccion&quot;: &quot;Av. America&quot;,
+  &quot;idZona&quot;: &quot;ngWP2wRvZTfy2aeq4xcw==&quot;,
+  &quot;telefonos&quot;: &quot;4245896&quot;,
+  &quot;celulares&quot;: &quot;70589630&quot;,
+  &quot;correoElectronico&quot;: &quot;carla@gmail.com&quot;,
+  &quot;trabaja&quot;: false,
+  &quot;lugarDeTrabajo&quot;: &quot;UMSS&quot;
+},
+  &quot;datosColegio&quot;: {
+  &quot;idColegio&quot;: &quot;6RGxgBKQ/HgJoq40MiHfw==&quot;,
+  &quot;idDepartamento&quot;:&quot;ooo408KdnMovKywZ6qzQ==&quot;,
+  &quot;idProvincia&quot;: &quot;ooo40MWdnMovKywZ6qzQ==&quot;,
+  &quot;valorTurno&quot;: &quot;ooo40MKdnMovKywZ6qzQ==&quot;,
+  &quot;valorTipoColegio&quot;: &quot;ooo40MW8KdnvKywZ6qzQ==&quot;,
+  &quot;anioEgreso&quot;: 2020
+},
+  &quot;datosPadre&quot;: {
+  &quot;primerApellido&quot;: &quot;Rojas&quot;,
+  &quot;segundoApellido&quot;: &quot;Garcia&quot;,
+  &quot;nombres&quot;: &quot;Ignacio&quot;,
+  &quot;direccion&quot;: &quot;Av. America&quot;,
+  &quot;idDepartamento&quot;: &quot;oooMW8KdnMovKywZ6qzQ==&quot;,
+  &quot;telefonos&quot;: &quot;78958963&quot;,
+  &quot;idProfesion&quot;: &quot;Psoyk2MVUIYwxyzBWsNSg==&quot;,
+  &quot;lugarDeTrabajo&quot;: &quot;UMSS&quot;
+},
+  &quot;datosMadre&quot;: {
+  &quot;primerApellido&quot;: &quot;Rojas&quot;,
+  &quot;segundoApellido&quot;: &quot;Garcia&quot;,
+  &quot;nombres&quot;: &quot;Luz&quot;,
+  &quot;direccion&quot;: &quot;Av. America&quot;,
+  &quot;idDepartamento&quot;: &quot;ooo40MW8KMovKywZ6qzQ==&quot;,
+  &quot;telefonos&quot;: &quot;78969637&quot;,
+  &quot;idProfesion&quot;: &quot;Psoyk2MVU7IYwxyzBNSg==&quot;,
+  &quot;lugarTrabajo&quot;: &quot;UMSS&quot;
+},
+  &quot;autorizaciones&quot;: [
+ {
+  &quot;nombre&quot;: &quot;Luz Garcia&quot;,
+     &quot;correoElectronico&quot;: &quot;luzg@gmail.com&quot;
+   }
+ ],
+ &quot;hermanos&quot;: [
+ {
+  &quot;nombre&quot;: &quot;Diego Garcia&quot;,
+  &quot;numeroDocumento&quot;: &quot;55286934&quot;
+ }
+ ],
+ &quot;viveCon&quot;: {
+   &quot;valorViveCon&quot;: &quot;ooo40MW8nMovKywZ6qzQ==&quot;,
+   &quot;nombreTutor&quot;: &quot;Luz Garcia&quot;,
+   &quot;telefonos&quot;: &quot;4795896&quot;,
+   &quot;celulares&quot;: &quot;78986535&quot;
+  }
+}</code></pre>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;response&quot;: {
+        &quot;process&quot;: &quot;Pre Inscripcion&quot;,
+        &quot;affectedRows&quot;: 1
+    }
+}</code></pre> 
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetCarreras_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetCarreras*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetCarreras" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetCarreras">GetCarreras()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de las carreras habilitadas.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerCarreras 
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;fGZrfeQ6LvXdvVIGdsgHVw==&quot;,
+            &quot;nombre&quot;: &quot;EDUCACION (PSC)&quot;
+        },
+        {
+            &quot;id&quot;: &quot;zkzh3GevYyPDLn0YqFWZCA==&quot;,
+            &quot;nombre&quot;: &quot;LICENCIATURA EN EDUCACION SECUNDARIA&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetColegiosPorProvincia_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetColegiosPorProvincia*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetColegiosPorProvincia_System_Int32_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetColegiosPorProvincia(System.Int32)">GetColegiosPorProvincia(Int32)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de colegios a partir de un ID provincia.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: idProvincia (String)
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;c1YR0S9h845CZHS39vt8pA==&quot;,
+            &quot;nombre&quot;: &quot;SAN CALIXTO&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8eteVicoi61wB1k4cAcJOg==&quot;,
+            &quot;nombre&quot;: &quot;SAN IGNACIO&quot;
+        }
+    ]
+} </code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetDepartamentosBolivia_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetDepartamentosBolivia*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetDepartamentosBolivia" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetDepartamentosBolivia">GetDepartamentosBolivia()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuelve la lista de los departamentos de Bolivia.</p>
+<p>
+TIPO: GET
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;c1YR0S9h845CZHS39vt8pA==&quot;,
+            &quot;nombre&quot;: &quot;SANTA CRUZ&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8eteVicoi61wB1k4cAcJOg==&quot;,
+            &quot;nombre&quot;: &quot;TARIJA&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetDepartamentosPorPais_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetDepartamentosPorPais*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetDepartamentosPorPais_System_Int32_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetDepartamentosPorPais(System.Int32)">GetDepartamentosPorPais(Int32)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele los departamentos según el ID del país seleccionado.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: idPais (string)
+</p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;znutLqucX0W/WixhwziIzg==&quot;,
+            &quot;nombre&quot;: &quot;LA PAZ&quot;
+        },
+        {
+            &quot;id&quot;: &quot;gPbRzH3wMyqs5Lq7T0jvJw==&quot;,
+            &quot;nombre&quot;: &quot;BENI&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetEstadosCiviles_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetEstadosCiviles*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetEstadosCiviles" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetEstadosCiviles">GetEstadosCiviles()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de estado civil.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;slJUX1cOyzL3cdRvTXg3Wg==&quot;,
+            &quot;descripcion&quot;: &quot;DIVORCIADO&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;9d5PCKdDxBLt4g%252bYtsTgyA==&quot;,
+            &quot;descripcion&quot;: &quot;VIUDO&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetMunicipiosPorProvincia_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetMunicipiosPorProvincia*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetMunicipiosPorProvincia_System_Int32_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetMunicipiosPorProvincia(System.Int32)">GetMunicipiosPorProvincia(Int32)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los Municipios según la Provincia seleccionada.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: idProvincia(String)
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;c1YR0S9h845CZHS39vt8pA==&quot;,
+            &quot;nombre&quot;: &quot;LA PAZ&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8eteVicoi61wB1k4cAcJOg==&quot;,
+            &quot;nombre&quot;: &quot;EL ALTO&quot;
+        }
+    ]
+} </code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetNacionalidades_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetNacionalidades*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetNacionalidades" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetNacionalidades">GetNacionalidades()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de países para la nacionalidad.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerNacionalidades
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;nacionalidad&quot;: &quot;BOLIVIANA&quot;
+        },
+        {
+            &quot;id&quot;: &quot;4luIxuI/y0rmAbpjz84MwQ==&quot;,
+            &quot;nacionalidad&quot;: &quot;ALEMANA&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetPeriodosAcademicos_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetPeriodosAcademicos*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetPeriodosAcademicos" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetPeriodosAcademicos">GetPeriodosAcademicos()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los periódos académicos habilitados para la pre-inscripción.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> +api/Academico/Preinscripcion/ObtenerPeriodosAcademicos 
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;gh8GevFlCVbXqMH9ij444a==&quot;,
+            &quot;codigo&quot;: &quot;V-2020&quot;
+        },
+        {
+            &quot;id&quot;: &quot;mWfzCjdGHwl9dsHxo5LjiQ==&quot;,
+            &quot;codigo&quot;: &quot;1-2021&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetProfesiones_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetProfesiones*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetProfesiones" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetProfesiones">GetProfesiones()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de profesiones de la lista de la Base de Datos.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;Psoyk2MVU7IYwxyzBWsNSg==&quot;,
+            &quot;nombre&quot;: &quot;TECNOLOGIA DE ALIMENTOS&quot;
+        },
+        {
+            &quot;id&quot;: &quot;xKoQU/IoXiU4PbWmJoKWZA==&quot;,
+            &quot;nombre&quot;: &quot;DESARROLLO Y PLANIFICACION DE LA EDUCACION SUPERIOR&quot;
+        }
+    ]   
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetProvinciasPorDepartamento_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetProvinciasPorDepartamento*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetProvinciasPorDepartamento_System_Int32_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetProvinciasPorDepartamento(System.Int32)">GetProvinciasPorDepartamento(Int32)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de provincias según el departamento seleccionado.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: idDepartamento (String)
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;c1YR0S9h845CZHS39vt8pA==&quot;,
+            &quot;nombre&quot;: &quot;CERCADO&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8eteVicoi61wB1k4cAcJOg==&quot;,
+            &quot;nombre&quot;: &quot;CARRASCO&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetSexos_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetSexos*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetSexos" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetSexos">GetSexos()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuelve la lista de sexos</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerSexos
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;descripcion&quot;: &quot;MASCULINO&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;4mo9gjV/hDzYrnuqH0/IHA==&quot;,
+            &quot;descripcion&quot;: &quot;FEMENINO&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTipoColegio_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTipoColegio*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTipoColegio" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTipoColegio">GetTipoColegio()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los tipos de colegio.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerTiposColegio
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;descripcion&quot;: &quot;PRIVADO&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;4mo9gjV/hDzYrnuqH0/IHA==&quot;,
+            &quot;descripcion&quot;: &quot;ESTATAL&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTiposDocumento_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTiposDocumento*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTiposDocumento" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTiposDocumento">GetTiposDocumento()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los tipos de documentos de identidad.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerTiposDocumento
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;slJUX1cOyzL3cdRvTXg3Wg==&quot;,
+            &quot;descripcion&quot;: &quot;CERTIFICADO DE NACIMIENTO&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;MhLc0N%252bjvAfuHLRo3NZY6g==&quot;,
+            &quot;descripcion&quot;: &quot;PASAPORTE&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTiposSangre_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTiposSangre*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTiposSangre" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTiposSangre">GetTiposSangre()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los tipos de sangre.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;descripcion&quot;: &quot;O RH+&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;4mo9gjV/hDzYrnuqH0/IHA==&quot;,
+            &quot;descripcion&quot;: &quot;O RH-&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTurnosColegio_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTurnosColegio*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetTurnosColegio" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetTurnosColegio">GetTurnosColegio()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de los turnos de Colegio.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerTurnosColegio
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;descripcion&quot;: &quot;MAÑANA&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;4mo9gjV/hDzYrnuqH0/IHA==&quot;,
+            &quot;descripcion&quot;: &quot;TARDE&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetValoresViveCon_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetValoresViveCon*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetValoresViveCon" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetValoresViveCon">GetValoresViveCon()</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de de los valores de Vive Con.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: No requiere parámetros.
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerValoresViveCon
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;valor&quot;: &quot;ooo40MW8KdnMovKywZ6qzQ==&quot;,
+            &quot;descripcion&quot;: &quot;PADRE&quot;
+        },
+        {
+            &quot;valor&quot;: &quot;4mo9gjV/hDzYrnuqH0/IHA==&quot;,
+            &quot;descripcion&quot;: &quot;MADRE&quot;
+        }
+    ]
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="returns"></h5>
+  
+  
+  
+  <a id="BackendAcademico_Api_Controllers_PreInscripcionController_GetZonasPorMunicipio_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetZonasPorMunicipio*"></a>
+  <h4 id="BackendAcademico_Api_Controllers_PreInscripcionController_GetZonasPorMunicipio_System_Int32_" data-uid="BackendAcademico.Api.Controllers.PreInscripcionController.GetZonasPorMunicipio(System.Int32)">GetZonasPorMunicipio(Int32)</h4>
+  <div class="markdown level1 summary"><p>CONSIDERACIONES: Devuele la lista de las Zonas según el Municipo seleccionado.</p>
+<p>
+TIPO: GET
+</p>
+<p>
+PARÁMETROS: idMunicipio(String)
+</p>
+<p>
+<a href="http://localhost:8080/articles/intro.html">URL BASE</a> api/Academico/Preinscripcion/ObtenerEstadosCiviles 
+</p>
+<p>
+RESULTADO:
+</p>
+<pre><code class="lang-cs">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;c1YR0S9h845CZHS39vt8pA==&quot;,
+            &quot;nombre&quot;: &quot;CALA CALA&quot;
+        },
+        {
+            &quot;id&quot;: &quot;8eteVicoi61wB1k4cAcJOg==&quot;,
+            &quot;nombre&quot;: &quot;SACOBAMBA&quot;
+        }
+    ]
+} </code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="parameters"></h5>
+  <h5 class="returns"></h5>
+  
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

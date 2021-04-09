@@ -1,0 +1,12 @@
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\bin\Debug\netstandard2.1\BackendAcademico.Core.deps.json
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\bin\Debug\netstandard2.1\BackendAcademico.Core.dll
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\bin\Debug\netstandard2.1\BackendAcademico.Core.pdb
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\bin\Debug\netstandard2.1\Newtonsoft.Json.dll
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\bin\Debug\netstandard2.1\Newtonsoft.Json.xml
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.csprojAssemblyReference.cache
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.AssemblyInfoInputs.cache
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.AssemblyInfo.cs
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.csproj.CoreCompileInputs.cache
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.csproj.CopyComplete
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.dll
+F:\PROYECTO NACIONAL\documentacion\BackendAcademico.Core\obj\Debug\netstandard2.1\BackendAcademico.Core.pdb

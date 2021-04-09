@@ -29,20 +29,34 @@
 
         #region Métodos
         /// <summary>
-        /// Consideraciones: Devuele la lista de los periódos académicos habilitados para la pre-inscripción.
+        /// CONSIDERACIONES: Devuele la lista de los periódos académicos habilitados para la pre-inscripción.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> +api/Academico/Preinscripcion/ObtenerPeriodosAcademicos 
         /// </para>
-        /// </summary>
-        /// <returns>
-        /// <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"/>     
-        /// </returns>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "gh8GevFlCVbXqMH9ij444a==",
+        ///             "codigo": "V-2020"
+        ///         },
+        ///         {
+        ///             "id": "mWfzCjdGHwl9dsHxo5LjiQ==",
+        ///             "codigo": "1-2021"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
+        /// </summary> 
         [HttpGet]
         [Route("ObtenerPeriodosAcademicos")]
         public async Task<IActionResult> GetPeriodosAcademicos()
@@ -66,20 +80,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de las carreras habilitadas.
+        /// CONSIDERACIONES: Devuele la lista de las carreras habilitadas.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Retorna: 
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerCarreras 
         /// </para>
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "fGZrfeQ6LvXdvVIGdsgHVw==",
+        ///             "nombre": "EDUCACION (PSC)"
+        ///         },
+        ///         {
+        ///             "id": "zkzh3GevYyPDLn0YqFWZCA==",
+        ///             "nombre": "LICENCIATURA EN EDUCACION SECUNDARIA"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
-
-
         [HttpGet]
         [Route("ObtenerCarreras")]
         public async Task<IActionResult> GetCarreras()
@@ -103,18 +131,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de países para la nacionalidad.
+        /// CONSIDERACIONES: Devuele la lista de países para la nacionalidad.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerNacionalidades
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "nacionalidad": "BOLIVIANA"
+        ///         },
+        ///         {
+        ///             "id": "4luIxuI/y0rmAbpjz84MwQ==",
+        ///             "nacionalidad": "ALEMANA"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerNacionalidades")]
         public async Task<IActionResult> GetNacionalidades()
@@ -138,18 +182,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuelve la lista de sexos.
+        /// CONSIDERACIONES: Devuelve la lista de sexos 
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerSexos
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "descripcion": "MASCULINO"
+        ///         },
+        ///         {
+        ///             "valor": "4mo9gjV/hDzYrnuqH0/IHA==",
+        ///             "descripcion": "FEMENINO"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerSexos")]
         public async Task<IActionResult> GetSexos()
@@ -173,18 +233,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la de estados civiles .
+        /// CONSIDERACIONES: Devuele la lista de estado civil.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "slJUX1cOyzL3cdRvTXg3Wg==",
+        ///             "descripcion": "DIVORCIADO"
+        ///         },
+        ///         {
+        ///             "valor": "9d5PCKdDxBLt4g%252bYtsTgyA==",
+        ///             "descripcion": "VIUDO"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerEstadosCiviles")]
         public async Task<IActionResult> GetEstadosCiviles()
@@ -208,18 +284,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de los tipos de documentos
+        /// CONSIDERACIONES: Devuele la lista de los tipos de documentos de identidad.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTiposDocumento
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "slJUX1cOyzL3cdRvTXg3Wg==",
+        ///             "descripcion": "CERTIFICADO DE NACIMIENTO"
+        ///         },
+        ///         {
+        ///             "valor": "MhLc0N%252bjvAfuHLRo3NZY6g==",
+        ///             "descripcion": "PASAPORTE"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerTiposDocumento")]
         public async Task<IActionResult> GetTiposDocumento()
@@ -243,18 +335,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de los turnos de Colegio.
+        /// CONSIDERACIONES: Devuele la lista de los turnos de Colegio.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTurnosColegio
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "descripcion": "MAÑANA"
+        ///         },
+        ///         {
+        ///             "valor": "4mo9gjV/hDzYrnuqH0/IHA==",
+        ///             "descripcion": "TARDE"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerTurnosColegio")]
         public async Task<IActionResult> GetTurnosColegio()
@@ -278,18 +386,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de los tipos de colegio.
+        /// CONSIDERACIONES: Devuele la lista de los tipos de colegio.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerTiposColegio
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "descripcion": "PRIVADO"
+        ///         },
+        ///         {
+        ///             "valor": "4mo9gjV/hDzYrnuqH0/IHA==",
+        ///             "descripcion": "ESTATAL"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerTiposColegio")]
         public async Task<IActionResult> GetTipoColegio()
@@ -313,18 +437,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de las carreras habilitadas.
+        /// CONSIDERACIONES: Devuele la lista de de los valores de Vive Con.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerValoresViveCon
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "descripcion": "PADRE"
+        ///         },
+        ///         {
+        ///             "valor": "4mo9gjV/hDzYrnuqH0/IHA==",
+        ///             "descripcion": "MADRE"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerValoresViveCon")]
         public async Task<IActionResult> GetValoresViveCon()
@@ -348,15 +488,33 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista del tipo de sangre.
+        /// CONSIDERACIONES: Devuele la lista de los tipos de sangre.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "valor": "ooo40MW8KdnMovKywZ6qzQ==",
+        ///             "descripcion": "O RH+"
+        ///         },
+        ///         {
+        ///             "valor": "4mo9gjV/hDzYrnuqH0/IHA==",
+        ///             "descripcion": "O RH-"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
         [HttpGet]
         [Route("ObtenerTiposSangre")]
@@ -380,21 +538,33 @@
                 return StatusCode(500, response);
             }
         }
-
         /// <summary>
-        /// Consideraciones: Devuele los departamentos según el ID del país seleccionado. 
+        /// CONSIDERACIONES: Devuele los departamentos según el ID del país seleccionado. 
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Parámetros: idPais (string)
+        /// PARÁMETROS: idPais (string)
         /// </para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// <para>
+        /// RESULTADO:
         /// </para>
-        /// 
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "znutLqucX0W/WixhwziIzg==",
+        ///             "nombre": "LA PAZ"
+        ///         },
+        ///         {
+        ///             "id": "gPbRzH3wMyqs5Lq7T0jvJw==",
+        ///             "nombre": "BENI"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerDepartamentosPorPais")]
         public async Task<IActionResult> GetDepartamentosPorPais([FromQuery] int idPais)
@@ -418,13 +588,31 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuelve la lista de los departamentos de Bolivia.
+        /// CONSIDERACIONES: Devuelve la lista de los departamentos de Bolivia.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
+        /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
-        /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "c1YR0S9h845CZHS39vt8pA==",
+        ///             "nombre": "SANTA CRUZ"
+        ///         },
+        ///         {
+        ///             "id": "8eteVicoi61wB1k4cAcJOg==",
+        ///             "nombre": "TARIJA"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
         [HttpGet]
         [Route("ObtenerDepartamentosBolivia")]
@@ -449,19 +637,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la de provincias según el departamento seleccionado
+        /// CONSIDERACIONES: Devuele la lista de provincias según el departamento seleccionado.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Parámetros: idDepartamento (String)
+        /// PARÁMETROS: idDepartamento (String)
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "c1YR0S9h845CZHS39vt8pA==",
+        ///             "nombre": "CERCADO"
+        ///         },
+        ///         {
+        ///             "id": "8eteVicoi61wB1k4cAcJOg==",
+        ///             "nombre": "CARRASCO"
+        ///         }
+        ///     ]
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerProvinciasPorDepartamento")]
         public async Task<IActionResult> GetProvinciasPorDepartamento([FromQuery] int idDepartamento)
@@ -485,19 +688,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de los Municipios según la Provincia seleccionada.
+        /// CONSIDERACIONES: Devuele la lista de los Municipios según la Provincia seleccionada.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Parámetros: idProvincia(String)
+        /// PARÁMETROS: idProvincia(String)
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "c1YR0S9h845CZHS39vt8pA==",
+        ///             "nombre": "LA PAZ"
+        ///         },
+        ///         {
+        ///             "id": "8eteVicoi61wB1k4cAcJOg==",
+        ///             "nombre": "EL ALTO"
+        ///         }
+        ///     ]
+        /// } 
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerMunicipiosPorProvincia")]
         public async Task<IActionResult> GetMunicipiosPorProvincia([FromQuery] int idProvincia)
@@ -521,19 +739,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de las Zonas según el Municipo seleccionado
+        /// CONSIDERACIONES: Devuele la lista de las Zonas según el Municipo seleccionado.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Parámetros: idMunicipio(String)
+        /// PARÁMETROS: idMunicipio(String)
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles 
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "c1YR0S9h845CZHS39vt8pA==",
+        ///             "nombre": "CALA CALA"
+        ///         },
+        ///         {
+        ///             "id": "8eteVicoi61wB1k4cAcJOg==",
+        ///             "nombre": "SACOBAMBA"
+        ///         }
+        ///     ]
+        /// } 
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerZonasPorMunicipio")]
         public async Task<IActionResult> GetZonasPorMunicipio([FromQuery] int idMunicipio)
@@ -557,19 +790,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de colegios a partir de un ID provincia.
+        /// CONSIDERACIONES: Devuele la lista de colegios a partir de un ID provincia.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
-        /// Parámetros: idProvincia (String)
+        /// PARÁMETROS: idProvincia (String)
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "c1YR0S9h845CZHS39vt8pA==",
+        ///             "nombre": "SAN CALIXTO"
+        ///         },
+        ///         {
+        ///             "id": "8eteVicoi61wB1k4cAcJOg==",
+        ///             "nombre": "SAN IGNACIO"
+        ///         }
+        ///     ]
+        /// } 
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerColegiosPorProvincia")]
         public async Task<IActionResult> GetColegiosPorProvincia([FromQuery] int idProvincia)
@@ -593,18 +841,34 @@
             }
         }
         /// <summary>
-        /// Consideraciones: Devuele la lista de profesiones de la lista de la Base de Datos.
+        /// CONSIDERACIONES: Devuele la lista de profesiones de la lista de la Base de Datos.
         /// <para>
-        /// Tipo: GET
+        /// TIPO: GET
         /// </para>
         /// <para>
+        /// PARÁMETROS: No requiere parámetros.
         /// </para>
         /// <para>
         /// <see href="http://localhost:8080/articles/intro.html">URL BASE</see> api/Academico/Preinscripcion/ObtenerEstadosCiviles
         /// </para>
-        /// 
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "data": [
+        ///         {
+        ///             "id": "Psoyk2MVU7IYwxyzBWsNSg==",
+        ///             "nombre": "TECNOLOGIA DE ALIMENTOS"
+        ///         },
+        ///         {
+        ///             "id": "xKoQU/IoXiU4PbWmJoKWZA==",
+        ///             "nombre": "DESARROLLO Y PLANIFICACION DE LA EDUCACION SUPERIOR"
+        ///         }
+        ///     ]   
+        /// }
+        /// </code>
         /// </summary>
-        ///
         [HttpGet]
         [Route("ObtenerProfesiones")]
         public async Task<IActionResult> GetProfesiones()
@@ -628,17 +892,19 @@
             }
         }
         /// <summary>
-        /// Guarda una nueva Pre-Inscripción.
+        /// CONSIDERACIONES: Guarda una nueva Pre-Inscripción.
         /// <para>
-        /// Tipo: POST
+        /// <remarks>PROCESO:</remarks> pre-inscripción.
+        /// </para>
+        /// <returns>
+        /// <img src="https://cdn.marketing123.123formbuilder.com/wp-content/uploads/2020/12/Formulario-de-Inscripcion-1095873.jpg" alt="Mountain"/>     
+        /// </returns>
+        /// <para>
+        /// TIPO: POST
         /// </para>
         /// <para>
         /// Formato del PayLoad de Pre-Inscripción:
         /// </para>
-        /// <para>
-        /// Tipo: POST
-        /// </para>
-        /// 
         /// <code language="cs">
         ///{
         ///  "informacionGeneral": {
@@ -647,7 +913,7 @@
         ///   "fechaInscripcion": "2019-08-28",
         ///   "observacion": "Sin observaciones"
         /// },
-        ///  "datosPersonales": {
+        ///   "datosPersonales": {
         ///   "documentoIdentidad": "8895578",
         ///   "valorTipoDocumento": "ooo4W8KdnMovKywZ6qzQ==",
         ///   "idDepartamentoExpedido": "ooo408KdnMovKywZ6qzQ==",
@@ -669,7 +935,7 @@
         ///   "trabaja": false,
         ///   "lugarDeTrabajo": "UMSS"
         /// },
-        ///  "datosColegio": {
+        ///   "datosColegio": {
         ///   "idColegio": "6RGxgBKQ/HgJoq40MiHfw==",
         ///   "idDepartamento":"ooo408KdnMovKywZ6qzQ==",
         ///   "idProvincia": "ooo40MWdnMovKywZ6qzQ==",
@@ -677,7 +943,7 @@
         ///   "valorTipoColegio": "ooo40MW8KdnvKywZ6qzQ==",
         ///   "anioEgreso": 2020
         /// },
-        ///  "datosPadre": {
+        ///   "datosPadre": {
         ///   "primerApellido": "Rojas",
         ///   "segundoApellido": "Garcia",
         ///   "nombres": "Ignacio",
@@ -687,7 +953,7 @@
         ///   "idProfesion": "Psoyk2MVUIYwxyzBWsNSg==",
         ///   "lugarDeTrabajo": "UMSS"
         /// },
-        ///  "datosMadre": {
+        ///   "datosMadre": {
         ///   "primerApellido": "Rojas",
         ///   "segundoApellido": "Garcia",
         ///   "nombres": "Luz",
@@ -697,7 +963,7 @@
         ///   "idProfesion": "Psoyk2MVU7IYwxyzBNSg==",
         ///   "lugarTrabajo": "UMSS"
         /// },
-        ///  "autorizaciones": [
+        ///   "autorizaciones": [
         ///  {
         ///   "nombre": "Luz Garcia",
         ///      "correoElectronico": "luzg@gmail.com"
@@ -717,10 +983,19 @@
         ///   }
         /// }
         /// </code>
+        /// <para>
+        /// RESULTADO:
+        /// </para>
+        /// <code language="cs">
+        /// {
+        ///     "response": {
+        ///         "process": "Pre Inscripcion",
+        ///         "affectedRows": 1
+        ///     }
+        /// }
+        /// </code> 
         /// </summary>
-        /// <param name="GuardarPreInscripcion">Es la inscripcion que se realizara <seealso cref="GuardarPreInscripcion"/></param>
-        /// <returns>Retorna el idMunicipio según la Provincia.</returns>
-        /// 
+        /// <param name="GuardarPreInscripcion">Es la inscripcion que se realizara</param>
         [HttpPost]
         [Route("GuardarPreInscripcion")]
         public async Task<IActionResult> AddPreInscripcion([FromBody] PreInscripcionQueryFilter preInscripcionQueryFilter)
