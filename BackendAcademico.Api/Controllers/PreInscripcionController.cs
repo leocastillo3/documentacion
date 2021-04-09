@@ -894,10 +894,10 @@
         /// <summary>
         /// CONSIDERACIONES: Guarda una nueva Pre-Inscripción.
         /// <para>
-        /// <remarks>PROCESO:</remarks> pre-inscripción.
+        /// <b> PROCESO:</b>  pre-inscripción.
         /// </para>
         /// <returns>
-        /// <img src="https://cdn.marketing123.123formbuilder.com/wp-content/uploads/2020/12/Formulario-de-Inscripcion-1095873.jpg" alt="Mountain"/>     
+        /// <img src="https://cdn.marketing123.123formbuilder.com/wp-content/uploads/2020/12/Formulario-de-Inscripcion-1095873.jpg"/>     
         /// </returns>
         /// <para>
         /// TIPO: POST
